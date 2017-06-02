@@ -1,0 +1,33 @@
+Daily Scrum P_DemoMot
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+31.05.17
+Tâches à faire:
+Fabien
+ - Mise en place Typo3 
+
+Jimmy
+ - Aide Fabien pour débuter mise en place Typo3 (Pour voir un peu comment ça fonctionne)
+ - Débute MCD
+ (Quand Fabien fini mise en place Typo3)
+ - Squelette HTML du Site
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+02.06.17
+Fabien
+ - Commit de la dernière fois 
+ - Suite tuto typo3
+ - Maquette perso
+ - Regroupement des idées avec colègue pour faire maquete finale
+ - Header + nav
+
+Jimmy
+ - Suite tuto typo3
+ - Maquette perso
+ - Regroupement des idées avec colègue pour faire maquete finale
+ - Footer + nav 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
