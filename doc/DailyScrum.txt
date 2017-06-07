@@ -37,3 +37,11 @@ Fabien
 Jimmy
  - Logo pour le site sur photoshop
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+07.06.17
+Fabien
+ - Parler avec le prof pour solution site sur gitkraken
+ - Mise en forme du site à partir du site du tuto
+Jimmy
+ - Parler avec le prof pour solution site sur gitkraken
+ - Chercher comment utiliser base de donnée avec typo3
