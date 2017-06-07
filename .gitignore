@@ -1,20 +1,20 @@
 ## TYPO3 v6.2
 # Ignore several upload and file directories.
-/fileadmin/user_upload/
-/fileadmin/_temp_/
-/fileadmin/_processed_/
-/uploads/
+/typo3/fileadmin/user_upload/
+/typo3/fileadmin/_temp_/
+/typo3/fileadmin/_processed_/
+/typo3/uploads/
 # Ignore cache
-/typo3conf/temp_CACHED*
-/typo3conf/temp_fieldInfo.php
-/typo3conf/deprecation_*.log
-/typo3conf/AdditionalConfiguration.php
+/typo3/typo3conf/temp_CACHED*
+/typo3/typo3conf/temp_fieldInfo.php
+/typo3/typo3conf/deprecation_*.log
+/typo3/typo3conf/AdditionalConfiguration.php
 # Ignore system folders, you should have them symlinked.
 # If not comment out the following entries.
-/typo3
-/typo3_src
-/typo3_src-*
-/.htaccess
-/index.php
+/typo3/typo3
+/typo3/typo3_src
+/typo3/typo3_src-*
+/typo3/.htaccess
+/typo3/index.php
 # Ignore temp directory.
-/typo3temp/
+/typo3/typo3temp/
