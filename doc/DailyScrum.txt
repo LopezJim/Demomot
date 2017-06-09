@@ -45,3 +45,12 @@ Fabien
 Jimmy
  - Parler avec le prof pour solution site sur gitkraken
  - Chercher comment utiliser base de donnée avec typo3
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+09.06.17
+Fabien
+ - Formulaire de connexion, récupérer informations utilisateurs connecté 
+
+Jimmy
+ - Créer une extension sur typo3 (Pour publication jeux) 
