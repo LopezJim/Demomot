@@ -116,6 +116,12 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'extension_builder' => [
+            'packagePath' => 'typo3conf/ext/extension_builder/',
+        ],
+        'extension_builder-master' => [
+            'packagePath' => 'typo3conf/ext/extension_builder-master/',
+        ],
     ],
     'version' => 5,
 ];

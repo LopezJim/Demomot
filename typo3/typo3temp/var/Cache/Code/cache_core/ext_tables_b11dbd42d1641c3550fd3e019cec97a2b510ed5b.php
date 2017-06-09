@@ -1182,4 +1182,66 @@ if (TYPO3_MODE === 'BE' && !(TYPO3_REQUESTTYPE & TYPO3_REQUESTTYPE_INSTALL)) {
     );
 }
 
+/**
+ * Extension: extension_builder
+ * File: C:/Users/pittierfa/Desktop/LocalSite/eds-www/typo3/typo3conf/ext/extension_builder-master/ext_tables.php
+ */
+
+$_EXTKEY = 'extension_builder';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+defined('TYPO3_MODE') || die();
+
+if (TYPO3_MODE === 'BE') {
+    /**
+     * Register Backend Module
+     */
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+        'EBT.' . $_EXTKEY,
+        'tools',
+        'extensionbuilder',
+        '',
+        array(
+            'BuilderModule' => 'index,domainmodelling,dispatchRpc',
+        ),
+        array(
+            'access' => 'user,group',
+            'icon' => 'EXT:extension_builder/ext_icon.gif',
+            'labels' => 'LLL:EXT:extension_builder/Resources/Private/Language/locallang_mod.xlf',
+        )
+    );
+}
+
+/**
+ * Extension: extension_builder-master
+ * File: C:/Users/pittierfa/Desktop/LocalSite/eds-www/typo3/typo3conf/ext/extension_builder-master/ext_tables.php
+ */
+
+$_EXTKEY = 'extension_builder-master';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+defined('TYPO3_MODE') || die();
+
+if (TYPO3_MODE === 'BE') {
+    /**
+     * Register Backend Module
+     */
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+        'EBT.' . $_EXTKEY,
+        'tools',
+        'extensionbuilder',
+        '',
+        array(
+            'BuilderModule' => 'index,domainmodelling,dispatchRpc',
+        ),
+        array(
+            'access' => 'user,group',
+            'icon' => 'EXT:extension_builder/ext_icon.gif',
+            'labels' => 'LLL:EXT:extension_builder/Resources/Private/Language/locallang_mod.xlf',
+        )
+    );
+}
+
 #
