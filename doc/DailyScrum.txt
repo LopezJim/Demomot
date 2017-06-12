@@ -54,3 +54,14 @@ Fabien
 
 Jimmy
  - Créer une extension sur typo3 (Pour publication jeux) 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12.06.17
+Fabien
+ - Extension builder
+ - Récupération informations utilisateurs connecté
+
+Jimmy
+ - Extension builder
+ - background
