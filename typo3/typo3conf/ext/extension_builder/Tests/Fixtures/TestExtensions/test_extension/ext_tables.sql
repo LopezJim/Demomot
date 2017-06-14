@@ -8,7 +8,7 @@ CREATE TABLE tx_testextension_domain_model_main (
 
 	name varchar(255) DEFAULT '' NOT NULL,
 	identifier varchar(255) DEFAULT '' NOT NULL,
-	description text NOT NULL,
+	description text,
 	my_date date DEFAULT '0000-00-00',
 	child1 int(11) unsigned DEFAULT '0',
 	children2 int(11) unsigned DEFAULT '0' NOT NULL,
@@ -18,8 +18,8 @@ CREATE TABLE tx_testextension_domain_model_main (
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
 	cruser_id int(11) unsigned DEFAULT '0' NOT NULL,
-	deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
-	hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
+	deleted smallint(5) unsigned DEFAULT '0' NOT NULL,
+	hidden smallint(5) unsigned DEFAULT '0' NOT NULL,
 	starttime int(11) unsigned DEFAULT '0' NOT NULL,
 	endtime int(11) unsigned DEFAULT '0' NOT NULL,
 
@@ -27,7 +27,7 @@ CREATE TABLE tx_testextension_domain_model_main (
 	t3ver_id int(11) DEFAULT '0' NOT NULL,
 	t3ver_wsid int(11) DEFAULT '0' NOT NULL,
 	t3ver_label varchar(255) DEFAULT '' NOT NULL,
-	t3ver_state tinyint(4) DEFAULT '0' NOT NULL,
+	t3ver_state smallint(6) DEFAULT '0' NOT NULL,
 	t3ver_stage int(11) DEFAULT '0' NOT NULL,
 	t3ver_count int(11) DEFAULT '0' NOT NULL,
 	t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
@@ -37,6 +37,7 @@ CREATE TABLE tx_testextension_domain_model_main (
 	sys_language_uid int(11) DEFAULT '0' NOT NULL,
 	l10n_parent int(11) DEFAULT '0' NOT NULL,
 	l10n_diffsource mediumblob,
+	l10n_state text,
 
 	PRIMARY KEY (uid),
 	KEY parent (pid),
@@ -54,13 +55,13 @@ CREATE TABLE tx_testextension_domain_model_child1 (
 	pid int(11) DEFAULT '0' NOT NULL,
 
 	name varchar(255) DEFAULT '' NOT NULL,
-	flag tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	flag smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
 	cruser_id int(11) unsigned DEFAULT '0' NOT NULL,
-	deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
-	hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
+	deleted smallint(5) unsigned DEFAULT '0' NOT NULL,
+	hidden smallint(5) unsigned DEFAULT '0' NOT NULL,
 	starttime int(11) unsigned DEFAULT '0' NOT NULL,
 	endtime int(11) unsigned DEFAULT '0' NOT NULL,
 
@@ -68,7 +69,7 @@ CREATE TABLE tx_testextension_domain_model_child1 (
 	t3ver_id int(11) DEFAULT '0' NOT NULL,
 	t3ver_wsid int(11) DEFAULT '0' NOT NULL,
 	t3ver_label varchar(255) DEFAULT '' NOT NULL,
-	t3ver_state tinyint(4) DEFAULT '0' NOT NULL,
+	t3ver_state smallint(6) DEFAULT '0' NOT NULL,
 	t3ver_stage int(11) DEFAULT '0' NOT NULL,
 	t3ver_count int(11) DEFAULT '0' NOT NULL,
 	t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
@@ -77,6 +78,7 @@ CREATE TABLE tx_testextension_domain_model_child1 (
 	sys_language_uid int(11) DEFAULT '0' NOT NULL,
 	l10n_parent int(11) DEFAULT '0' NOT NULL,
 	l10n_diffsource mediumblob,
+	l10n_state text,
 
 	PRIMARY KEY (uid),
 	KEY parent (pid),
@@ -104,8 +106,8 @@ CREATE TABLE tx_testextension_domain_model_child2 (
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
 	cruser_id int(11) unsigned DEFAULT '0' NOT NULL,
-	deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
-	hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
+	deleted smallint(5) unsigned DEFAULT '0' NOT NULL,
+	hidden smallint(5) unsigned DEFAULT '0' NOT NULL,
 	starttime int(11) unsigned DEFAULT '0' NOT NULL,
 	endtime int(11) unsigned DEFAULT '0' NOT NULL,
 
@@ -113,7 +115,7 @@ CREATE TABLE tx_testextension_domain_model_child2 (
 	t3ver_id int(11) DEFAULT '0' NOT NULL,
 	t3ver_wsid int(11) DEFAULT '0' NOT NULL,
 	t3ver_label varchar(255) DEFAULT '' NOT NULL,
-	t3ver_state tinyint(4) DEFAULT '0' NOT NULL,
+	t3ver_state smallint(6) DEFAULT '0' NOT NULL,
 	t3ver_stage int(11) DEFAULT '0' NOT NULL,
 	t3ver_count int(11) DEFAULT '0' NOT NULL,
 	t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
@@ -122,6 +124,7 @@ CREATE TABLE tx_testextension_domain_model_child2 (
 	sys_language_uid int(11) DEFAULT '0' NOT NULL,
 	l10n_parent int(11) DEFAULT '0' NOT NULL,
 	l10n_diffsource mediumblob,
+	l10n_state text,
 
 	PRIMARY KEY (uid),
 	KEY parent (pid),
@@ -145,8 +148,8 @@ CREATE TABLE tx_testextension_domain_model_child3 (
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
 	cruser_id int(11) unsigned DEFAULT '0' NOT NULL,
-	deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
-	hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
+	deleted smallint(5) unsigned DEFAULT '0' NOT NULL,
+	hidden smallint(5) unsigned DEFAULT '0' NOT NULL,
 	starttime int(11) unsigned DEFAULT '0' NOT NULL,
 	endtime int(11) unsigned DEFAULT '0' NOT NULL,
 
@@ -154,7 +157,7 @@ CREATE TABLE tx_testextension_domain_model_child3 (
 	t3ver_id int(11) DEFAULT '0' NOT NULL,
 	t3ver_wsid int(11) DEFAULT '0' NOT NULL,
 	t3ver_label varchar(255) DEFAULT '' NOT NULL,
-	t3ver_state tinyint(4) DEFAULT '0' NOT NULL,
+	t3ver_state smallint(6) DEFAULT '0' NOT NULL,
 	t3ver_stage int(11) DEFAULT '0' NOT NULL,
 	t3ver_count int(11) DEFAULT '0' NOT NULL,
 	t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
@@ -163,6 +166,7 @@ CREATE TABLE tx_testextension_domain_model_child3 (
 	sys_language_uid int(11) DEFAULT '0' NOT NULL,
 	l10n_parent int(11) DEFAULT '0' NOT NULL,
 	l10n_diffsource mediumblob,
+	l10n_state text,
 
 	PRIMARY KEY (uid),
 	KEY parent (pid),
@@ -185,8 +189,8 @@ CREATE TABLE tx_testextension_domain_model_child4 (
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
 	cruser_id int(11) unsigned DEFAULT '0' NOT NULL,
-	deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
-	hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
+	deleted smallint(5) unsigned DEFAULT '0' NOT NULL,
+	hidden smallint(5) unsigned DEFAULT '0' NOT NULL,
 	starttime int(11) unsigned DEFAULT '0' NOT NULL,
 	endtime int(11) unsigned DEFAULT '0' NOT NULL,
 
@@ -194,7 +198,7 @@ CREATE TABLE tx_testextension_domain_model_child4 (
 	t3ver_id int(11) DEFAULT '0' NOT NULL,
 	t3ver_wsid int(11) DEFAULT '0' NOT NULL,
 	t3ver_label varchar(255) DEFAULT '' NOT NULL,
-	t3ver_state tinyint(4) DEFAULT '0' NOT NULL,
+	t3ver_state smallint(6) DEFAULT '0' NOT NULL,
 	t3ver_stage int(11) DEFAULT '0' NOT NULL,
 	t3ver_count int(11) DEFAULT '0' NOT NULL,
 	t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
@@ -203,6 +207,7 @@ CREATE TABLE tx_testextension_domain_model_child4 (
 	sys_language_uid int(11) DEFAULT '0' NOT NULL,
 	l10n_parent int(11) DEFAULT '0' NOT NULL,
 	l10n_diffsource mediumblob,
+	l10n_state text,
 
 	PRIMARY KEY (uid),
 	KEY parent (pid),
@@ -216,7 +221,7 @@ CREATE TABLE tx_testextension_domain_model_child4 (
 #
 CREATE TABLE tx_testextension_domain_model_child2 (
 
-	main  int(11) unsigned DEFAULT '0' NOT NULL,
+	main int(11) unsigned DEFAULT '0' NOT NULL,
 
 );
 

@@ -119,8 +119,8 @@ return [
         'extension_builder' => [
             'packagePath' => 'typo3conf/ext/extension_builder/',
         ],
-        'extension_builder-master' => [
-            'packagePath' => 'typo3conf/ext/extension_builder-master/',
+        'flashgameext' => [
+            'packagePath' => 'typo3conf/ext/flashgameext/',
         ],
     ],
     'version' => 5,

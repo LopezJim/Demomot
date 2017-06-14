@@ -8,7 +8,7 @@ namespace FIXTURE\TestExtension\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- *  (c) 2017 John Doe <mail@typo3.com>, TYPO3
+ *  (c) ###YEAR### John Doe <mail@typo3.com>, TYPO3
  *
  ***/
 
@@ -23,24 +23,28 @@ class Child2 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $name = '';
+
     /**
      * A date which is stored as Native Date
      *
      * @var \DateTime
      */
     protected $dateProperty1 = null;
+
     /**
      * DateTime which is stored as Native DateTime
      *
      * @var \DateTime
      */
     protected $dateProperty2 = null;
+
     /**
      * A date which is stored as Timestamp
      *
      * @var \DateTime
      */
     protected $dateProperty3 = null;
+
     /**
      * DateTime stores as Timestamp
      *

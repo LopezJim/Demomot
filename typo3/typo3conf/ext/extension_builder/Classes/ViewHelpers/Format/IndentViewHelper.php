@@ -20,21 +20,21 @@ namespace EBT\ExtensionBuilder\ViewHelpers\Format;
  */
 class IndentViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
 {
+    protected $escapeOutput = FALSE;
+
     /**
      *
      * @param int $indentation
-     * @return string
+     * @param string $type
+     * @return bool true or false
      */
     public function render($indentation)
     {
-        $outputToIndent = trim($this->renderChildren());
-        if ($outputToIndent === '') {
-            return chr(10);
-        }
+        $outputToIndent = $this->renderChildren();
         $lineArray = explode(chr(10), $outputToIndent);
         $indentString = '';
         for ($i = 0; $i < $indentation; $i++) {
-            $indentString .= '	';
+            $indentString .= '    ';
         }
         return implode(chr(10) . $indentString, $lineArray);
     }

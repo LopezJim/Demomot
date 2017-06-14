@@ -5,6 +5,7 @@
 $typo3InstallDir = PATH_site;
 
 return array(
-    'EBT\\ExtensionBuilder\\' => array($typo3InstallDir . 'typo3conf/ext/extension_builder-master/Classes'),
-    'PhpParser\\' => array($typo3InstallDir . 'typo3conf/ext/extension_builder-master/Resources/Private/PHP/PHP-Parser/lib/PhpParser'),
+    'EBT\\ExtensionBuilder\\' => array($typo3InstallDir . 'typo3conf/ext/extension_builder/Classes'),
+    'FlashGameExt\\Flashgameext\\' => array($typo3InstallDir . 'typo3conf/ext/flashgameext/Classes'),
+    'PhpParser\\' => array($typo3InstallDir . 'typo3conf/ext/extension_builder/Resources/Private/PHP/PHP-Parser/lib/PhpParser'),
 );

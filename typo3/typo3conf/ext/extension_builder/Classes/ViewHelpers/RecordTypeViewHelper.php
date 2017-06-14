@@ -28,7 +28,7 @@ class RecordTypeViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractView
      * @param \EBT\ExtensionBuilder\Configuration\ExtensionBuilderConfigurationManager $configurationManager
      * @return void
      */
-    public function injectConfigurationManager(\EBT\ExtensionBuilder\Configuration\ExtensionBuilderConfigurationManager $configurationManager)
+    public function injectExtensionBuilderConfigurationManager(\EBT\ExtensionBuilder\Configuration\ExtensionBuilderConfigurationManager $configurationManager)
     {
         $this->configurationManager = $configurationManager;
     }

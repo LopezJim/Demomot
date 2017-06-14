@@ -167,7 +167,7 @@ class ExtensionValidator extends \TYPO3\CMS\Extbase\Validation\Validator\Abstrac
      * @param ExtensionBuilderConfigurationManager $configurationManager
      * @return void
      */
-    public function injectConfigurationManager(ExtensionBuilderConfigurationManager $configurationManager)
+    public function injectExtensionBuilderConfigurationManager(ExtensionBuilderConfigurationManager $configurationManager)
     {
         $this->configurationManager = $configurationManager;
     }

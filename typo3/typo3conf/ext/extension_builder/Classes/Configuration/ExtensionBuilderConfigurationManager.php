@@ -14,14 +14,13 @@ namespace EBT\ExtensionBuilder\Configuration;
  * The TYPO3 project - inspiring people to share!
  */
 
-use EBT\ExtensionBuilder\Utility\Spyc;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 
 /**
  * Load settings from yaml file and from TYPO3_CONF_VARS extConf
@@ -139,7 +138,7 @@ class ExtensionBuilderConfigurationManager extends \TYPO3\CMS\Extbase\Configurat
         $settings = array();
         $settingsFile = $this->getSettingsFile($extensionKey);
         if (file_exists($settingsFile)) {
-            $yamlParser = new Spyc();
+            $yamlParser = new \EBT\ExtensionBuilder\Utility\SpycYAMLParser();
             $settings = $yamlParser->YAMLLoadString(file_get_contents($settingsFile));
         } else {
             GeneralUtility::devLog('No settings found: ' . $settingsFile, 'extension_builder', 2);
@@ -530,7 +529,7 @@ class ExtensionBuilderConfigurationManager extends \TYPO3\CMS\Extbase\Configurat
         );
         $smdJson->target = BackendUtility::getModuleUrl('tools_ExtensionBuilderExtensionbuilder', $parameters);
         $smdJsonString = json_encode($smdJson);
-
+        
         $response->getBody()->write($smdJsonString);
         return $response;
     }

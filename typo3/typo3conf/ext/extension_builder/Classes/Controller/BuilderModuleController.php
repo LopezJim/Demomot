@@ -14,12 +14,12 @@ namespace EBT\ExtensionBuilder\Controller;
  * The TYPO3 project - inspiring people to share!
  */
 
+use EBT\ExtensionBuilder\Configuration\ExtensionBuilderConfigurationManager;
 use EBT\ExtensionBuilder\Domain\Repository\ExtensionRepository;
 use EBT\ExtensionBuilder\Domain\Validator\ExtensionValidator;
 use EBT\ExtensionBuilder\Service\ExtensionSchemaBuilder;
 use EBT\ExtensionBuilder\Service\RoundTrip;
 use EBT\ExtensionBuilder\Utility\ExtensionInstallationStatus;
-use EBT\ExtensionBuilder\Configuration\ExtensionBuilderConfigurationManager;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 

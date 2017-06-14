@@ -1,7 +1,7 @@
 <?php
 defined('TYPO3_MODE') || die('Access denied.');
 call_user_func(
-    function($extKey)
+    function()
     {
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
             'FIXTURE.TestExtension',
@@ -16,24 +16,23 @@ call_user_func(
         );
 
     // wizards
-	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-		'mod {
-			wizards.newContentElement.wizardItems.plugins {
-				elements {
-					testplugin {
-						icon = ' . \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($extKey) . 'Resources/Public/Icons/user_plugin_testplugin.svg
-						title = LLL:EXT:test_extension/Resources/Private/Language/locallang_db.xlf:tx_test_extension_domain_model_testplugin
-						description = LLL:EXT:test_extension/Resources/Private/Language/locallang_db.xlf:tx_test_extension_domain_model_testplugin.description
-						tt_content_defValues {
-							CType = list
-							list_type = testextension_testplugin
-						}
-					}
-				}
-				show = *
-			}
-	   }'
-	);
-    },
-    $_EXTKEY
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+        'mod {
+            wizards.newContentElement.wizardItems.plugins {
+                elements {
+                    testplugin {
+                        icon = ' . \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('test_extension') . 'Resources/Public/Icons/user_plugin_testplugin.svg
+                        title = LLL:EXT:test_extension/Resources/Private/Language/locallang_db.xlf:tx_test_extension_domain_model_testplugin
+                        description = LLL:EXT:test_extension/Resources/Private/Language/locallang_db.xlf:tx_test_extension_domain_model_testplugin.description
+                        tt_content_defValues {
+                            CType = list
+                            list_type = testextension_testplugin
+                        }
+                    }
+                }
+                show = *
+            }
+       }'
+    );
+    }
 );
