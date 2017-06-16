@@ -86,4 +86,13 @@ Fabien
 Jimmy
  - Utilisation extension
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14.06.17
+Fabien
+ - change l'affichage par défaut des jeux publiés. Jeux lancé quand cliqué sur son nom 
+
+Jimmy
+ - Guide utilisation
+ - 
 
