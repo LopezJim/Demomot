@@ -1175,11 +1175,11 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1433089350] = [
 
 
 /**
- * Extension: flashgameext
- * File: C:/Users/pittierfa/Desktop/LocalSite/eds-www/typo3/typo3conf/ext/flashgameext/ext_localconf.php
+ * Extension: flashgameextonet
+ * File: C:/Users/pittierfa/Desktop/LocalSite/eds-www/typo3/typo3conf/ext/flashgameextonet/ext_localconf.php
  */
 
-$_EXTKEY = 'flashgameext';
+$_EXTKEY = 'flashgameextonet';
 $_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
 
 
@@ -1190,14 +1190,14 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'FlashGameExt.Flashgameext',
-            'Frontendflashgame',
+            'FlashGameExtOneT.Flashgameextonet',
+            'Frontendflashgameext',
             [
-                'Post' => 'list, show, new, create, edit, update, delete'
+                'Game' => 'list, show, new, create, edit, update, delete'
             ],
             // non-cacheable actions
             [
-                'Post' => 'create, update, delete'
+                'Game' => 'create, update, delete'
             ]
         );
 
@@ -1206,13 +1206,13 @@ call_user_func(
         'mod {
             wizards.newContentElement.wizardItems.plugins {
                 elements {
-                    frontendflashgame {
-                        icon = ' . \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('flashgameext') . 'Resources/Public/Icons/user_plugin_frontendflashgame.svg
-                        title = LLL:EXT:flashgameext/Resources/Private/Language/locallang_db.xlf:tx_flashgameext_domain_model_frontendflashgame
-                        description = LLL:EXT:flashgameext/Resources/Private/Language/locallang_db.xlf:tx_flashgameext_domain_model_frontendflashgame.description
+                    frontendflashgameext {
+                        icon = ' . \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('flashgameextonet') . 'Resources/Public/Icons/user_plugin_frontendflashgameext.svg
+                        title = LLL:EXT:flashgameextonet/Resources/Private/Language/locallang_db.xlf:tx_flashgameextonet_domain_model_frontendflashgameext
+                        description = LLL:EXT:flashgameextonet/Resources/Private/Language/locallang_db.xlf:tx_flashgameextonet_domain_model_frontendflashgameext.description
                         tt_content_defValues {
                             CType = list
-                            list_type = flashgameext_frontendflashgame
+                            list_type = flashgameextonet_frontendflashgameext
                         }
                     }
                 }

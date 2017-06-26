@@ -24,10 +24,6 @@ $renderingContext->getViewHelperResolver()->addNamespaces(array (
   array (
     0 => 'TYPO3\\CMS\\Form\\ViewHelpers',
   ),
-  'ce' => 
-  array (
-    0 => 'TYPO3\\CMS\\FluidStyledContent\\ViewHelpers',
-  ),
 ));
 }
 
@@ -56,4 +52,4 @@ return $output0;
 
 
 }
-#2994620621    1380      
+#2994984390    1298      

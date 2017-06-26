@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-06-14T13:46:20Z" product-name="flashgameext">
+		<header/>
+		<body>
+			<trans-unit id="game.description">
+				<source>game</source>
+			</trans-unit>
+			<trans-unit id="user.description">
+				<source>User Name</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

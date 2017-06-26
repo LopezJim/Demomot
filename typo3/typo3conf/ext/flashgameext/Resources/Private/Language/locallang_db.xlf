@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2017-06-12T13:20:58Z" product-name="flashgameext">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-06-14T14:00:07Z" product-name="flashgameext">
 		<header/>
 		<body>
 			<trans-unit id="tx_flashgameext_domain_model_game">
@@ -26,9 +26,6 @@
 			</trans-unit>
 			<trans-unit id="tx_flashgameext_domain_model_post">
 				<source>Post</source>
-			</trans-unit>
-			<trans-unit id="tx_flashgameext_domain_model_post.pos_date">
-				<source>Pos Date</source>
 			</trans-unit>
 			<trans-unit id="tx_flashgameext_domain_model_post.game">
 				<source>Game</source>

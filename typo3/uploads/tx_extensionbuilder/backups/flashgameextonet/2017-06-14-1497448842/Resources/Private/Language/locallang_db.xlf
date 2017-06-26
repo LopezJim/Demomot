@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-06-14T16:00:39Z" product-name="flashgameextonet">
+		<header/>
+		<body>
+			<trans-unit id="tx_flashgameextonet_domain_model_game">
+				<source>Game</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameextonet_domain_model_game.gam_path">
+				<source>Gam Path</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameextonet_domain_model_game.gam_name">
+				<source>Gam Name</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameextonet_domain_model_game.gam_uploader">
+				<source>Gam Uploader</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

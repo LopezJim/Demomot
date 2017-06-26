@@ -1214,11 +1214,11 @@ if (TYPO3_MODE === 'BE') {
 }
 
 /**
- * Extension: flashgameext
- * File: C:/Users/pittierfa/Desktop/LocalSite/eds-www/typo3/typo3conf/ext/flashgameext/ext_tables.php
+ * Extension: flashgameextonet
+ * File: C:/Users/pittierfa/Desktop/LocalSite/eds-www/typo3/typo3conf/ext/flashgameextonet/ext_tables.php
  */
 
-$_EXTKEY = 'flashgameext';
+$_EXTKEY = 'flashgameextonet';
 $_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
 
 
@@ -1229,21 +1229,15 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'FlashGameExt.Flashgameext',
-            'Frontendflashgame',
-            'frontendFlashGame'
+            'FlashGameExtOneT.Flashgameextonet',
+            'Frontendflashgameext',
+            'Frontend Flash Game Ext'
         );
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('flashgameext', 'Configuration/TypoScript', 'Flash Game Ext');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('flashgameextonet', 'Configuration/TypoScript', 'Flash Game Ext One T');
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_flashgameext_domain_model_game', 'EXT:flashgameext/Resources/Private/Language/locallang_csh_tx_flashgameext_domain_model_game.xlf');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_flashgameext_domain_model_game');
-
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_flashgameext_domain_model_user', 'EXT:flashgameext/Resources/Private/Language/locallang_csh_tx_flashgameext_domain_model_user.xlf');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_flashgameext_domain_model_user');
-
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_flashgameext_domain_model_post', 'EXT:flashgameext/Resources/Private/Language/locallang_csh_tx_flashgameext_domain_model_post.xlf');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_flashgameext_domain_model_post');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_flashgameextonet_domain_model_game', 'EXT:flashgameextonet/Resources/Private/Language/locallang_csh_tx_flashgameextonet_domain_model_game.xlf');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_flashgameextonet_domain_model_game');
 
     }
 );
