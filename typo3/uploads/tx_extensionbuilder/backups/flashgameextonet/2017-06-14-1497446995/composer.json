@@ -1,0 +1,14 @@
+{
+    "name": "flashgameext/flashgameext",
+    "type": "typo3-cms-extension",
+    "description": "Ext for flash game",
+    "author": [],
+    "require": {
+        "typo3/cms-core": "^8.6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlashGameExt\\Flashgameext\\": "Classes"
+        }
+    }
+}

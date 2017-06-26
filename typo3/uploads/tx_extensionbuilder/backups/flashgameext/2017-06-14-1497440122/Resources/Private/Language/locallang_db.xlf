@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-06-14T13:34:43Z" product-name="flashgameext">
+		<header/>
+		<body>
+			<trans-unit id="tx_flashgameext_domain_model_game">
+				<source>Game</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_game.gam_path">
+				<source>Gam Path</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_game.gam_name">
+				<source>Gam Name</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_user">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_user.use_name">
+				<source>Use Name</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_user.use_firstname">
+				<source>Use Firstname</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_user.use_pseudo">
+				<source>Use Pseudo</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_post">
+				<source>Post</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_post.pos_date">
+				<source>Pos Date</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_post.game">
+				<source>Game</source>
+			</trans-unit>
+			<trans-unit id="tx_flashgameext_domain_model_post.user">
+				<source>User</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

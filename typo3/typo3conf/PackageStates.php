@@ -116,6 +116,12 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'extension_builder' => [
+            'packagePath' => 'typo3conf/ext/extension_builder/',
+        ],
+        'flashgameextonet' => [
+            'packagePath' => 'typo3conf/ext/flashgameextonet/',
+        ],
     ],
     'version' => 5,
 ];

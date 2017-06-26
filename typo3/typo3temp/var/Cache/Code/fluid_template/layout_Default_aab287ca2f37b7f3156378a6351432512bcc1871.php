@@ -1,0 +1,65 @@
+<?php
+
+class layout_Default_aab287ca2f37b7f3156378a6351432512bcc1871 extends \TYPO3Fluid\Fluid\Core\Compiler\AbstractCompiledTemplate {
+
+public function getLayoutName(\TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface $renderingContext) {
+$self = $this; 
+return (string) '';
+}
+public function hasLayout() {
+return FALSE;
+}
+public function addCompiledNamespaces(\TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface $renderingContext) {
+$renderingContext->getViewHelperResolver()->addNamespaces(array (
+  'core' => 
+  array (
+    0 => 'TYPO3\\CMS\\Core\\ViewHelpers',
+  ),
+  'f' => 
+  array (
+    0 => 'TYPO3Fluid\\Fluid\\ViewHelpers',
+    1 => 'TYPO3\\CMS\\Fluid\\ViewHelpers',
+  ),
+  'formvh' => 
+  array (
+    0 => 'TYPO3\\CMS\\Form\\ViewHelpers',
+  ),
+));
+}
+
+/**
+ * Main Render function
+ */
+public function render(\TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface $renderingContext) {
+$self = $this;
+$output0 = '';
+
+$output0 .= '
+<div class="tx-flashgameextonet">
+	';
+// Rendering ViewHelper TYPO3Fluid\Fluid\ViewHelpers\RenderViewHelper
+$renderChildrenClosure2 = function() use ($renderingContext, $self) {
+return NULL;
+};
+$arguments1 = array();
+$arguments1['section'] = NULL;
+$arguments1['partial'] = NULL;
+$arguments1['delegate'] = NULL;
+$arguments1['arguments'] = array (
+);
+$arguments1['optional'] = false;
+$arguments1['default'] = NULL;
+$arguments1['contentAs'] = NULL;
+$arguments1['section'] = 'main';
+
+$output0 .= TYPO3Fluid\Fluid\ViewHelpers\RenderViewHelper::renderStatic($arguments1, $renderChildrenClosure2, $renderingContext);
+
+$output0 .= '
+</div>';
+
+return $output0;
+}
+
+
+}
+#2994984746    1614      
