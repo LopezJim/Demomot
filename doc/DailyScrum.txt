@@ -37,3 +37,74 @@ Fabien
 Jimmy
  - Logo pour le site sur photoshop
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+07.06.17
+Fabien
+ - Parler avec le prof pour solution site sur gitkraken
+ - Mise en forme du site à partir du site du tuto
+Jimmy
+ - Parler avec le prof pour solution site sur gitkraken
+ - Chercher comment utiliser base de donnée avec typo3
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+09.06.17
+Fabien
+ - Formulaire de connexion, récupérer informations utilisateurs connecté 
+
+Jimmy
+ - Créer une extension sur typo3 (Pour publication jeux) 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12.06.17
+Fabien
+ - Extension builder
+ - Récupération informations utilisateurs connecté
+
+Jimmy
+ - Extension builder
+ - background
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+13.06.17
+Fabien
+ - Examens
+
+Jimmy
+ - Terminer le background puis faire une extension
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14.06.17
+Fabien
+ - Rédaction problème
+ - Utilisation extension
+
+Jimmy
+ - Utilisation extension
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16.06.17
+Fabien
+ - change l'affichage par défaut des jeux publiés. Jeux lancé quand cliqué sur son nom 
+
+Jimmy
+ - Présentation
+ - Création jeu flash
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+26.06.17
+Fabien
+ - Récupèrer dernier backup site
+ - Retraduire en français + rechanger affichage pour montrer uniquement auteur publication etquand clique sur nom du jeu -> télécharge jeu
+ - Présentation
+
+Jimmy
+ - Présentation 
