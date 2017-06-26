@@ -88,11 +88,23 @@ Jimmy
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-14.06.17
+16.06.17
 Fabien
  - change l'affichage par défaut des jeux publiés. Jeux lancé quand cliqué sur son nom 
 
 Jimmy
- - Guide utilisation
- - 
+ - Présentation
+ - Création jeu flash
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+26.06.17
+Fabien
+ - Récupèrer dernier backup site
+ - Retraduire en français + rechanger affichage pour montrer uniquement auteur publication etquand clique sur nom du jeu -> télécharge jeu
+ - Présentation
+
+Jimmy
+ - Présentation 
